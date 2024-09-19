@@ -58,7 +58,7 @@
 3. Use the situation-based assistance feature to receive context-aware legal advice.
 4. Explore relevant past cases suggested by the AI model.
 
-## Limitations
+## Features
 
 - Focuses primarily on the Indian legal system, specifically the Indian Penal Code (IPC).
 - Designed for Indian law, and may not be directly applicable to other legal systems without significant modifications.
