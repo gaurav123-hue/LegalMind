@@ -22,7 +22,7 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/HarshP2109/LegalMind.git
-   cd legalmind
+   cd LegalMind
    ```
 
 2. Install backend dependencies:
@@ -76,4 +76,3 @@ Feel free to submit pull requests or issues if you find bugs or want to contribu
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Submit a pull request with detailed explanations of the changes.
-
