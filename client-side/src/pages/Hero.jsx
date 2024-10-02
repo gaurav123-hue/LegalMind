@@ -4,11 +4,14 @@ import HorizontalScroll from '../components/HorizontalScroll';
 import Features from '../components/Features';
 import ScrollToTopArrow from '../components/ScrollToTopArrow';
 import AboutUs from '../components/AboutUs';
+import Footer from '../components/Footer';
+import ContactUs from '../components/ContactUs';
 
 export default function Hero() {
     const section1Ref = useRef(null);
     const section2Ref = useRef(null);
     const section3Ref = useRef(null);
+    const section4Ref = useRef(null);
 
     const scrollToSection = (sectionRef) => {
         sectionRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -18,7 +21,7 @@ export default function Hero() {
             <section className="mt-4"
             ref={section1Ref}
                 >
-                <Header scrollToSection={scrollToSection} section1Ref={section1Ref} section2Ref={section2Ref} section3Ref={section3Ref}
+                <Header scrollToSection={scrollToSection} section1Ref={section1Ref} section2Ref={section2Ref} section3Ref={section3Ref} section4Ref={section4Ref}
                  />
             </section>
             {/* Section for large screens */}
@@ -109,6 +112,18 @@ export default function Hero() {
             </section>
             <section className="mt-10" ref={section3Ref}>
                 <AboutUs/>
+                <div className="bg-customGreen w-full py-4 flex items-center justify-center text-white">
+                    READY?
+                    <button className=" bg-white text-customGreen text-sm py-2 px-4 rounded-md ml-3">
+                        TRY NOW
+                    </button>
+                </div>
+            </section>
+            <section ref={section4Ref}>
+                <ContactUs/>
+            </section>
+            <section>
+                <Footer/>
             </section>
                 <ScrollToTopArrow/>
         </>

@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         customGreen: '#4C7766',  // Define your custom color here
+        customDarkGreen:  '#181F1C',
       },
       keyframes: {
         'infinite-scroll': {
