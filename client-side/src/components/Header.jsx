@@ -10,7 +10,7 @@ export default function Header({ scrollToSection, section1Ref, section2Ref, sect
             <div className="sm:block hidden ">
                 <ul className="flex lg:gap-5 gap-x-2 items-center cursor-pointer">
                     <li   onClick={() => scrollToSection(section2Ref)}>Features</li>
-                    <li>About Us</li>
+                    <li onClick={() => scrollToSection(section3Ref)}>About Us</li>
                     <li>Contact</li>
                 </ul>
             </div>

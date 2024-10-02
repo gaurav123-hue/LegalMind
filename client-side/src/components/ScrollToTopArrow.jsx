@@ -32,7 +32,7 @@ export default function ScrollToTopArrow() {
       {showArrow && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 z-20 right-8 bg-green-800 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition duration-300"
+          className="fixed bottom-8 z-20 right-8 bg-customGreen text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

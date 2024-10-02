@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // Set Inter as the default sans-serif font
+        poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         customGreen: '#4C7766',  // Define your custom color here

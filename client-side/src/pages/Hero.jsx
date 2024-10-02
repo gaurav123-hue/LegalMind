@@ -107,7 +107,7 @@ export default function Hero() {
                 ref={section2Ref}>
                 <Features/>
             </section>
-            <section className="mt-10">
+            <section className="mt-10" ref={section3Ref}>
                 <AboutUs/>
             </section>
                 <ScrollToTopArrow/>

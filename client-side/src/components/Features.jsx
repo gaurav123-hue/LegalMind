@@ -40,7 +40,7 @@ export default function Features() {
                 </p>
             </div>
             {/* Large Screens Layout */}
-            <div className="hidden lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-4">
+            <div className="hidden lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-4 z-slide-in">
                 <div className="col-span-2 bg-white p-4 rounded-md">
                     <img src={featuresData[0].img} alt={featuresData[0].title} className="mt-2" />
                     <h3 className="text-xl font-bold">{featuresData[0].title}</h3>

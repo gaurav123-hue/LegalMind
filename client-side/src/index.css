@@ -64,7 +64,7 @@
 
 
 .animate-z-slide-in {
-    animation: z-slide-in 1s ease forwards; /* Adjust duration and timing function as needed */
+    animation: z-slide-in 0.5s ease forwards; /* Adjust duration and timing function as needed */
 }
 .animate-top-slide-in {
     animation: top-slide-in 1s ease forwards; /* Adjust duration and timing function as needed */
