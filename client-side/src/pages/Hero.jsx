@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import HorizontalScroll from '../components/HorizontalScroll';
 import Features from '../components/Features';
 import ScrollToTopArrow from '../components/ScrollToTopArrow';
+import AboutUs from '../components/AboutUs';
 
 export default function Hero() {
     const section1Ref = useRef(null);
@@ -20,6 +21,7 @@ export default function Hero() {
                 <Header scrollToSection={scrollToSection} section1Ref={section1Ref} section2Ref={section2Ref} section3Ref={section3Ref}
                  />
             </section>
+            {/* Section for large screens */}
             <section className="hidden lg:block">
                 <div className="grid grid-cols-1 sm:grid-cols-3 h-auto items-center overflow-hidden">
                     {/* Left Column */}
@@ -63,10 +65,50 @@ export default function Hero() {
                 <HorizontalScroll />
                 </div>
             </section>
+            {/* section for small screens */}
+            <section 
+                className="lg:hidden">
+                <div
+                    className="flex items-center justify-center -mt-8">
+                <img 
+                    src="/images/justice-lady.png"
+                    alt="Justice Lady" 
+                    className="ml-3 brightness animate-z-slide-in"/>
+                </div>
+                <div
+                    className="z-20 top-[130px] left-4 absolute  lg:text-[90px] text-[70px] sm:text-[70px] font-bold flex flex-col items-start -space-y-12 animate-left-slide-in ">
+                    <p className=" text-stroke  text-transparent ">
+                        FULFILL 
+                    </p>
+                    <p 
+                        className="text-customGreen">
+                        YOUR
+                    </p>
+                </div>
+
+                <div
+                    className="z-20 top-[300px] right-4 absolute  lg:text-[90px] text-[70px] sm:text-[70px] font-bold flex flex-col items-start -space-y-12 animate-left-slide-in ">
+                    <p className="text-customGreen  ">
+                        LEGAL 
+                    </p>
+                    <p 
+                        className=" text-stroke  text-transparent">
+                        NEEDS
+                    </p>
+                </div>
+
+                <div>
+                    <HorizontalScroll/>
+                </div>
+
+            </section>
             <section
                 className="mt-10"
                 ref={section2Ref}>
                 <Features/>
+            </section>
+            <section className="mt-10">
+                <AboutUs/>
             </section>
                 <ScrollToTopArrow/>
         </>

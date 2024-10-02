@@ -50,7 +50,22 @@
     }
 }
 
+@keyframes z-slide-in {
+    0% {
+      transform: scale(0) translateZ(-200px); /* Starts small and from the back */
+      opacity: 0; /* Start transparent */
+    }
+    100% {
+      transform: scale(1) translateZ(0); /* Grows to its original size and comes forward */
+      opacity: 1; /* Fully opaque */
+    }
+  }
+  
 
+
+.animate-z-slide-in {
+    animation: z-slide-in 1s ease forwards; /* Adjust duration and timing function as needed */
+}
 .animate-top-slide-in {
     animation: top-slide-in 1s ease forwards; /* Adjust duration and timing function as needed */
 }
